@@ -4,7 +4,6 @@
     }
 
     .newTaskComponents input {
-        float: left;
         font-size: 20px;
     }
 
@@ -25,28 +24,24 @@
     }
 
     ul li .fa-x {
-        right: 10px;
+        top: 26px;
+        right: 0;
         font-size: 16px;
     }
 
     ul li .fa-edit {
-        right: 45px;
+        top: 26px;
+        right: 30px;
         font-size: 16px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    body {
-        min-width: 100vw;
-        min-height: 100vh;
-    }
-
     #messageBox {
         font-size: 20px;
     }
 
     .newTaskComponents input {
-        float: left;
         font-size: 20px;
     }
 
@@ -78,17 +73,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    body {
-        min-width: 100vw;
-        min-height: 100vh;
-    }
-
     #messageBox {
         font-size: 22px;
     }
 
     .newTaskComponents input {
-        float: left;
         font-size: 22px;
     }
 
@@ -120,17 +109,11 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body {
-        min-width: 100vw;
-        min-height: 100vh;
-    }
-
     #messageBox {
         font-size: 26px;
     }
 
     .newTaskComponents input {
-        float: left;
         font-size: 26px;
     }
 
@@ -162,17 +145,11 @@
 }
 
 @media (min-width: 1400px) {
-    body {
-        min-width: 100vw;
-        min-height: 100vh;
-    }
-
     #messageBox {
         font-size: 26px;
     }
 
     .newTaskComponents input {
-        float: left;
         font-size: 26px;
     }
 
