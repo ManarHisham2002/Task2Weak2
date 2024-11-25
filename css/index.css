@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #7ca5e2, #55c0eb, #719fe6, #3370c0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+    text-transform: capitalize;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDoListContent {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+#messageBox {
+    font-size: 20px;
+}
+.newTaskComponents {
+    color: white;
+    text-align: center;
+}
+
+.newTaskComponents:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.newTaskComponents input {
+    margin: 0;
+    border: none;
+    background-color: #719fe6;
+    border-radius: 7px 0 0 7px;
+    width: 75%;
+    float: left;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.newTaskComponents input:focus {
+    outline: none;
+}
+
+.newTaskComponents input::placeholder {
+    color: #ffff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.newTaskComponents span {
+    width: 25%;
+    background-color: #5a7eb4;
+    border-radius: 0 7px 7px 0;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newTaskComponents span:hover {
+    background-color: #5a7eb48e;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+    transition: 1s;
+    color: #555 !important;
+    text-transform: capitalize;
+}
+
+ul li.checked {
+    color: #406296 !important;
+    text-decoration: line-through;
+}
+
+ul li .fa-check {
+    margin-right: 15px;
+    font-size: 19px;
+}
+
+ul li .fa-x {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 16px;
+    padding-left: 3rem;
+    padding: 1rem;
+}
+
+ul li .fa-edit {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    font-size: 16px;
+    padding-left: 3rem;
+    padding: 1rem;
+}
+
+ul li .fa-x:hover,
+ul li .fa-edit:hover {
+    color: #406296 !important;
+}
+
+ul li span:first-child {
+    margin-right: 10px;
+}
+
+ul li .date-time {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+}
+
+ul li.checked .date-time {
+    color: #4e4e4e;
+}

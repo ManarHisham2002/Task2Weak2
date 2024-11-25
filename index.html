@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="toDoList">
+        <div class="container">
+            <div class="toDoListContent col-xxl-8 col-xl-8 col-lg-10 col-md-12 col-sm-12 p-3 mt-5 align-center">
+                <div id="messageBox" class="alert alert-info text-center d-none col-12" role="alert"></div>
+                <div class="newTaskComponents col-12 p-4">
+                    <input type="text" id="newTask" class="p-3" placeholder="new task">
+                    <span class="p-3" onclick="newElement()">Add</span>
+                </div>
+                <div class="col-12 ps-4 pe-4">
+                    <ul id="myTasks"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
